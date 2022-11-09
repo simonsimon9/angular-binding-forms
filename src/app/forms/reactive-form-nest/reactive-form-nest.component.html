@@ -1,0 +1,12 @@
+<div>
+  <h4>Nested Form - Grouping form control</h4>
+  <div>
+    <form id="nest" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <label for="first-name"></label>
+      <input id="first-name" type="text" formControlName="firstName" />
+      <label for="last-name"></label>
+      <input id="last-name" type="text" formControlName="lastName" />
+      <button type="submit">submit</button>
+    </form>
+  </div>
+</div>

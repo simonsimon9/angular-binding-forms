@@ -1,0 +1,11 @@
+<div>
+  <h4>Two Way Binding ===========</h4>
+  <app-two-way></app-two-way>
+  <h4>Event Binding =============</h4>
+  <app-child-event (callChildEvent)="parentFunc($event)"></app-child-event>
+  <p>from child to parent: {{ eventBindVariable }}</p>
+  <h4>Property Binding ===========</h4>
+  <app-child-property [childVariable]="parentVariable"></app-child-property>
+  <h4>Local ======================</h4>
+  <app-local #local></app-local>{{ local.local }}
+</div>

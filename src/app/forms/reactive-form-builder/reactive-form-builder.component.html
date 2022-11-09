@@ -1,0 +1,12 @@
+<div>
+  <h4>Form Builder</h4>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label for="firstname"></label>
+    <input type="text" formControlName="firstName" />
+    <label for="lastname"></label>
+    <input type="text" formControlName="lastName" />
+    <button>submit</button>
+  </form>
+  <p>Form Value: {{ profileForm.value['firstName'] }}</p>
+  <p>Form Status: {{ profileForm.status }}</p>
+</div>

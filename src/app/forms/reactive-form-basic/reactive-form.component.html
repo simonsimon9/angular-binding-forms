@@ -1,0 +1,11 @@
+<div>
+  <h4>Basic Form</h4>
+  <div>
+    <form id="basic">
+      <label for="basic"></label>
+      <input id="name" type="text" [formControl]="basicFormName" />
+    </form>
+    <button (click)="updateValueBasicForm()">default value</button>
+    <p>Value: {{ basicFormName.value }}</p>
+  </div>
+</div>
